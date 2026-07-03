@@ -95,9 +95,23 @@ export default function App() {
 
       {/* 2. Global Header */}
       <header className="app-header glass-panel">
-        <div className="header-logo-section">
-          <Calendar className="logo-icon" size={24} style={{ color: 'var(--accent-green)' }} />
-          <h1 className="logo-text">Pra-Calendar</h1>
+        <div className="header-logo-section" style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+            <Calendar className="logo-icon" size={24} style={{ color: 'var(--accent-green)' }} />
+            <h1 className="logo-text">Pra-Calendar</h1>
+          </div>
+          
+          <a
+            href="https://prdipland.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="pro-land-badge"
+            title="Visit Pro Land"
+          >
+            <span className="pro-bracket pro-bracket-left">[</span>
+            <span className="pro-land-text">Pro Land</span>
+            <span className="pro-bracket pro-bracket-right">]</span>
+          </a>
         </div>
 
         <div className="header-navigation-controls">

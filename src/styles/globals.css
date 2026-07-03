@@ -163,6 +163,59 @@ input, textarea, select {
   letter-spacing: 0.02em;
 }
 
+/* Square bracket link badge styling for Pro Land */
+.pro-land-badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 750;
+  color: var(--text-primary);
+  text-decoration: none;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  user-select: none;
+}
+
+.pro-bracket {
+  color: var(--accent-green);
+  font-size: 1.3rem;
+  font-weight: 800;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.3s;
+}
+
+.pro-bracket-left {
+  margin-right: 0.35rem;
+}
+
+.pro-bracket-right {
+  margin-left: 0.35rem;
+}
+
+.pro-land-text {
+  background: linear-gradient(135deg, var(--text-primary), var(--accent-green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: var(--transition-smooth);
+}
+
+/* Hover micro-animations */
+.pro-land-badge:hover .pro-bracket-left {
+  transform: translateX(-4px) scale(1.15);
+  color: var(--accent-green);
+}
+
+.pro-land-badge:hover .pro-bracket-right {
+  transform: translateX(4px) scale(1.15);
+  color: var(--accent-green);
+}
+
+.pro-land-badge:hover .pro-land-text {
+  letter-spacing: 0.03em;
+  filter: drop-shadow(0 0 4px rgba(93, 156, 89, 0.2));
+}
+
 .header-navigation-controls {
   display: flex;
   align-items: center;
