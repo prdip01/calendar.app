@@ -1,0 +1,122 @@
+/* Fresh Green theme - Glassmorphism definitions */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 12px 36px rgba(44, 62, 53, 0.08), 0 4px 12px rgba(0, 0, 0, 0.03);
+  border-radius: 16px;
+  color: var(--text-primary);
+  transition: var(--transition-smooth);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(255, 255, 255, 0.88);
+  border-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 15px 45px rgba(44, 62, 53, 0.12), 0 6px 20px rgba(0, 0, 0, 0.04);
+  transform: translateY(-2px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 6px 18px rgba(44, 62, 53, 0.04);
+  border-radius: 12px;
+  color: var(--text-primary);
+  transition: var(--transition-smooth);
+}
+
+/* Glass Inputs - Light sage background for legibility */
+.glass-input {
+  background: rgba(244, 248, 245, 0.85);
+  border: 1px solid rgba(93, 156, 89, 0.25);
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  transition: var(--transition-smooth);
+}
+
+.glass-input::placeholder {
+  color: rgba(44, 62, 53, 0.5);
+}
+
+.glass-input:focus {
+  background: #FFFFFF;
+  border-color: var(--accent-green);
+  box-shadow: 0 0 0 3px rgba(93, 156, 89, 0.15);
+  outline: none;
+}
+
+/* Glass Buttons */
+.glass-btn {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(93, 156, 89, 0.2);
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  color: var(--text-primary);
+  transition: var(--transition-smooth);
+}
+
+.glass-btn:hover {
+  background: rgba(93, 156, 89, 0.08);
+  border-color: var(--accent-green);
+  box-shadow: 0 4px 12px rgba(44, 62, 53, 0.05);
+  transform: translateY(-2px);
+}
+
+.glass-btn:active {
+  transform: translateY(0);
+}
+
+.glass-btn:focus-visible {
+  outline: 2px solid var(--accent-green);
+  outline-offset: 1px;
+}
+
+/* Primary Button is Fresh Green (#5D9C59) */
+.glass-btn-primary {
+  background: var(--accent-green);
+  border-color: var(--accent-green);
+  color: #FFFFFF !important;
+}
+
+.glass-btn-primary:hover {
+  background: #4C8B48; /* slightly darker green */
+  border-color: #4C8B48;
+  box-shadow: 0 6px 18px rgba(93, 156, 89, 0.3);
+}
+
+/* Danger Button */
+.glass-btn-danger {
+  background: rgba(239, 83, 80, 0.1);
+  border-color: rgba(239, 83, 80, 0.25);
+  color: #EF5350;
+}
+
+.glass-btn-danger:hover {
+  background: #EF5350;
+  border-color: #EF5350;
+  color: #FFFFFF;
+  box-shadow: 0 6px 18px rgba(239, 83, 80, 0.3);
+}
+
+/* Scrollable Glass Panel */
+.glass-scroll {
+  overflow-y: auto;
+}
+
+/* Active State */
+.glass-active {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-color: var(--accent-green) !important;
+  box-shadow: 0 8px 24px rgba(93, 156, 89, 0.12) !important;
+}

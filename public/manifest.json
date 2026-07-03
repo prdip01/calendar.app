@@ -1,0 +1,17 @@
+{
+  "short_name": "Pra-Calendar",
+  "name": "Pra-Calendar Digital Planner",
+  "start_url": "/",
+  "background_color": "#E8F4E5",
+  "theme_color": "#5D9C59",
+  "display": "standalone",
+  "orientation": "any",
+  "description": "Premium, dreamy, glassmorphic digital planner calendar application.",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
