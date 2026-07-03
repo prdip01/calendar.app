@@ -163,7 +163,7 @@ input, textarea, select {
   letter-spacing: 0.02em;
 }
 
-/* Square bracket link badge styling for Pro Land */
+/* Square bracket link badge styling for Pro Land (Yellow fold theme) */
 .pro-land-badge {
   display: inline-flex;
   align-items: center;
@@ -172,17 +172,22 @@ input, textarea, select {
   font-weight: 750;
   color: var(--text-primary);
   text-decoration: none;
-  padding: 0.3rem 0.6rem;
+  padding: 0.35rem 0.7rem;
   cursor: pointer;
+  background: rgba(255, 215, 0, 0.06); /* light yellow fold backdrop */
+  border: 1.5px solid rgba(255, 215, 0, 0.3); /* yellow border fold */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(255, 215, 0, 0.05);
   transition: var(--transition-smooth);
   user-select: none;
 }
 
 .pro-bracket {
-  color: var(--accent-green);
-  font-size: 1.3rem;
-  font-weight: 800;
-  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.3s;
+  color: #FFD700; /* Solid Gold-Yellow */
+  font-size: 1.35rem;
+  font-weight: 900;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.3s, text-shadow 0.3s;
 }
 
 .pro-bracket-left {
@@ -201,14 +206,23 @@ input, textarea, select {
 }
 
 /* Hover micro-animations */
+.pro-land-badge:hover {
+  background: rgba(255, 215, 0, 0.15);
+  border-color: rgba(255, 215, 0, 0.7);
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.25);
+  transform: translateY(-1.5px);
+}
+
 .pro-land-badge:hover .pro-bracket-left {
-  transform: translateX(-4px) scale(1.15);
-  color: var(--accent-green);
+  transform: translateX(-4px) scale(1.2);
+  color: #FFD700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.9);
 }
 
 .pro-land-badge:hover .pro-bracket-right {
-  transform: translateX(4px) scale(1.15);
-  color: var(--accent-green);
+  transform: translateX(4px) scale(1.2);
+  color: #FFD700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.9);
 }
 
 .pro-land-badge:hover .pro-land-text {
