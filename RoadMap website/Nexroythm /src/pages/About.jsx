@@ -37,7 +37,7 @@ const GradCapIcon = () => (
   </svg>
 )
 
-const SUBMIT_EMAIL = 'janikdad1987@gmail.com'
+const SUBMIT_EMAIL = 'nexroythm@gmail.com'
 
 const VALUES = [
   { icon: KeyIcon,      title: 'Full Ownership',       desc: 'You own every line of code we write. No vendor lock-in, no hidden fees for source files.' },
